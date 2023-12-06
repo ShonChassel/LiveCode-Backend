@@ -76,10 +76,10 @@ io.on("connection", (socket) => {
 
 app.listen(8800, () => {
     connect()
-    console.log('connected to back!');
+    console.log('connected to app back!');
 })
 
 server.listen(3003, () => {
-    connect()
-    console.log('connected to back!');
+    // connect()
+    console.log('connected to server back!');
 })
