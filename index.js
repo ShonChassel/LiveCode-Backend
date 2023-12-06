@@ -68,7 +68,7 @@ io.on('connection', (socket) => {
     });
 });
 
-const PORT = process.env.PORT || 8800;
+const PORT = 8800;
 
 httpServer.listen(PORT, async () => {
     await connect();
