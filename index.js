@@ -73,7 +73,13 @@ io.on("connection", (socket) => {
     })
 })
 
-server.listen(8800, () => {
+
+app.listen(8800, () => {
+    connect()
+    console.log('connected to back!');
+})
+
+server.listen(3003, () => {
     connect()
     console.log('connected to back!');
 })
