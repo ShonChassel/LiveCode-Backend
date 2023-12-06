@@ -13,10 +13,12 @@ import cors from 'cors';
 
 const app = express();
 const httpServer = createServer(app); // Create an HTTP server separately
+
 const io = new SocketServer(httpServer, {
     cors: {
         origin: 'https://livecode-com.onrender.com', // Update the origin to your Render frontend URL
         methods: ['GET', 'POST', 'PUT'],
+        credentials:true
     },
 });
 
