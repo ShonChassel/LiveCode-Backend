@@ -60,7 +60,7 @@ app.use((err, req, res, next) => {
 const io = new SocketServer(server, {
     path: '/',
     cors: {
-        origin: 'http://localhost:3000',
+        origin: 'https://livecode-com.onrender.com',
         methods: ['GET', 'POST', 'PUT']
     }
 });
