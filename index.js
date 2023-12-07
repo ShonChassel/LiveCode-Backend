@@ -1,7 +1,7 @@
 import express from 'express';
 import dotenv from 'dotenv';
 import mongoose from 'mongoose';
-import { createServer } from 'http'; // Change import to createServer
+import { createServer } from 'http'; 
 import { Server as SocketServer } from 'socket.io';
 
 import authRoute from './routes/auth.js';
@@ -12,11 +12,11 @@ import cookieParser from 'cookie-parser';
 import cors from 'cors';
 
 const app = express();
-const httpServer = createServer(app); // Create an HTTP server separately
+const httpServer = createServer(app); 
 
 const io = new SocketServer(httpServer, {
     cors: {
-        origin: 'https://livecode-com.onrender.com', // Update the origin to your Render frontend URL
+        origin: 'https://livecode-com.onrender.com', 
         methods: ['GET', 'POST', 'PUT'],
         credentials:true
     },
